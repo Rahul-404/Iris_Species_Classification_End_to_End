@@ -51,4 +51,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/Rahul-404/Iris_Species_Classification_End_to_End/blob/master/LICENSE)
