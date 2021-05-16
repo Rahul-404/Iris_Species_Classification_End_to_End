@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+    <meta charset="UTF-8">
+	<title>Iris_app - Flask</title>
+</head>
+<body>
+	<div class="Head">
+		<h1>Iris - flower species Classification App</h1>
+	</div>
+
+	<div class="Image">
+		<img src="{{ url_for('static', filename=image) }}" width="300" height="300" />
+	</div>
+
+	<div class="Form">
+		<form action="http://127.0.0.1:5000" method="POST">
+
+			<h4 class="Feature_Head">Features</h4>
+			<p class="Note">Note :- value between 0.0cm to 8.0cm valide</p>
+			<p class="Feature_Name">Sepal Length (cm):</p>
+			<!-- <br> -->
+			<input type="text" name="SepalLength">
+
+			<p class="Feature_Name">Sepal Width (cm):</p>
+			<!-- <br> -->
+			<input type="text" name="SepalWidth">
+
+			<p class="Feature_Name">Petal Length (cm):</p>
+			<!-- <br> -->
+			<input type="text" name="PetalLength">
+
+			<p class="Feature_Name">Petal Width (cm):</p>
+			<!-- <br> -->
+			<input type="text" name="PetalWidth">
+			<br>
+			<input type="reset" value="reset" name="Reset" class="Reset_Button">
+
+			<div class="Button">
+				<input type="submit" value="Click Here To Classify">
+			</div>
+		</form>
+	</div>
+
+	
+
+	<div class="Result">
+		{{ result }}
+	</div>
+	
+</body>
+</html>
